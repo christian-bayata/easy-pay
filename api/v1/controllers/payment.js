@@ -27,11 +27,11 @@ const initializePayment = async (req, res) => {
       }
       if (resp.body.status == false) {
         console.log("Resp: ", resp.body.message);
-        //return Response.sendError({ res, statusCode: status.BAD_REQUEST, message: resp.body.message });
       }
     });
   } catch (error) {
     console.log(error);
+    res.render("pages/error");
   }
 };
 
