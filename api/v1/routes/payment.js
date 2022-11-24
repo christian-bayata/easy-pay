@@ -4,6 +4,6 @@ const paymentContoller = require("../controllers/payment");
 
 //paymentRouter.get("/home", paymentContoller.home);
 
-paymentRouter.post("/initialize-payment", paymentContoller.initializePayment);
+paymentRouter.post("/pay", paymentContoller.initializePayment);
 
 module.exports = paymentRouter;

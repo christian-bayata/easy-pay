@@ -8,6 +8,7 @@ const router = require("./api/v1/routes/payment");
 /* Initialize express application */
 const app = express();
 app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
 /* Connect to the database */
 const connectionString = require("./config/connection");

@@ -12,20 +12,21 @@
         <h1>Welcome to Easy Pay</h1>
         <p>Provide the necessary information below to make fast and efficient payment</p>
       </div>
-      <div style="background: #3a3b3c; margin: auto; width: 40%">
-        <form>
-          <hr style="color: #fff"></hr>
+      <div style="background: #505355; margin: auto; width: 40%; border-radius: 5px">
+        <form name="myForm" action="/pay" method="POST">
           <div class="form-group">
-            <input type="email" placeholder="Enter first name" style="width: 500px; margin: 12px 0; padding: 5px 0" />
+            <input type="text" placeholder="Enter first name" name="firstName" style="width: 24em; margin: 50px 0 12px; padding: 5px 0" />
           </div>
           <div class="form-group">
-            <input type="email" placeholder="Enter last name" style="width: 500px; margin: 12px 0; padding: 5px 0" />
+            <input type="text" placeholder="Enter last name" name="lastName" style="width: 24em; margin: 20px 0; padding: 5px 0" />
           </div>
           <div class="form-group">
-            <input type="email" placeholder="Enter email address" style="width: 500px; margin: 12px 0; padding: 5px 0" />
+            <input type="email" placeholder="Enter email address" name="email" style="width: 24em; margin: 20px 0; padding: 5px 0" />
           </div>
-
-          <button type="submit" class="btn btn-primary">Submit</button>
+          <div class="form-group">
+            <input type="number" placeholder="Enter amount" name="amount" style="width: 24em; margin: 20px 0; padding: 5px 0" />
+          </div>
+          <button type="submit" class="btn btn-primary" style="margin: 10px 0 40px">Pay</button>
         </form>
       </div>
     </main>

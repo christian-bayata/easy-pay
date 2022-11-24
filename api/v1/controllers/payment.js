@@ -20,15 +20,14 @@ const initializePayment = async (req, res) => {
         "content-type": "application/json",
         authorization: `Bearer ${SECRET}`,
       },
-      body: { firstName, lastName, email, amount },
+      body: { firstName, lastName, email, amount: amount * 100 },
       json: true,
     };
 
     /* Paystack payment initialization */
     theRequest(options).then(async (resp) => {
       if (resp.body.status == true) {
-        console.log("Resp: ", resp.body.data.authorization_url);
-        // return Response.sendSuccess({ res, statusCode: status.OK, message: resp.body.message, body: resp.body.data.authorization_url });
+        res.redirect(resp.body.data.authorization_url);
       }
       if (resp.body.status == false) {
         console.log("Resp: ", resp.body.message);
