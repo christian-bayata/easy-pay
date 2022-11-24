@@ -2,10 +2,6 @@ const request = require("request");
 const util = require("util");
 const theRequest = util.promisify(request);
 
-// const home = (req, res) => {
-//   res.render("pages/index");
-// };
-
 const initializePayment = async (req, res) => {
   const { firstName, lastName, email, amount } = req.body;
 
@@ -36,7 +32,6 @@ const initializePayment = async (req, res) => {
     });
   } catch (error) {
     console.log(error);
-    //return Response.sendFatalError({ res });
   }
 };
 
