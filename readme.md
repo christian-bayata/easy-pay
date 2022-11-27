@@ -55,3 +55,5 @@ Pictorial explanations below:
 - After users select their channel of payment, their payments are successful provided there are no errors during the process.
 
 <img width="1680" alt="Screenshot 2022-11-27 at 15 51 14" src="https://user-images.githubusercontent.com/80787295/204142143-fd04ce13-22ff-4671-a08c-282781626a26.png">
+
+After making payment, users will have to wait for the vendor(s) to verify the payment, if the verification is successful then an e-receipt is given to the them
