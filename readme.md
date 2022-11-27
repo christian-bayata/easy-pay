@@ -455,3 +455,24 @@ Pictorial explanations below:
 After making payment, users will have to wait for the vendor(s) to verify the payment, if the verification is successful then an e-receipt is given to the them.
 
 <img width="1680" alt="Screenshot 2022-11-27 at 15 56 52" src="https://user-images.githubusercontent.com/80787295/204142690-c3708c9e-1cc5-4f53-8a5e-3ce64a7250ea.png">
+
+## yarn scripts
+
+This is the entry for a developer. This command:
+
+- runs **nodemon watch task** for the all files connected to the codebase
+- sets the **environment variable** `NODE_ENV` to `development`
+- opens the db connection for `development`
+- starts the server on `localhost`
+
+> Note: Before running the API for development, ensure that you set the following **environment variables**:
+
+```dotenv
+NODE_ENV=
+PORT=
+DB_HOST=
+DB_PORT=
+DB_NAME=
+TEST_DB_NAME=
+PAYSTACK_TEST_SK=
+```
