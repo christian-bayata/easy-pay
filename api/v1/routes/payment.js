@@ -2,8 +2,10 @@ const { Router } = require("express");
 const paymentRouter = Router();
 const paymentContoller = require("../controllers/payment");
 
-//paymentRouter.get("/home", paymentContoller.home);
-
 paymentRouter.post("/pay", paymentContoller.initializePayment);
+
+paymentRouter.get("/verify", paymentContoller.verifyPayment);
+
+paymentRouter.get("/receipt/:id", paymentContoller.getReceipt);
 
 module.exports = paymentRouter;

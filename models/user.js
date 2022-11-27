@@ -14,16 +14,27 @@ const UserSchema = new Schema(
     email: {
       type: String,
       required: true,
-      unique: true,
     },
     amount: {
       type: Number,
+      required: true,
+    },
+    reference: {
+      type: String,
+      required: true,
+    },
+    paidAt: {
+      type: Date,
+      required: true,
+    },
+    currency: {
+      type: String,
       required: true,
     },
   },
   { timestamps: true }
 );
 
-/* Creates the user model */
+/* Creates the User model */
 const User = mongoose.model("User", UserSchema);
 module.exports = User;

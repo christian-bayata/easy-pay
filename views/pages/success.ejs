@@ -4,10 +4,50 @@
     <%- include('../partials/head') %>
   </head>
 
-  <body style="max-width: 100%">
+  <body style="max-width: 100%; background: antiquewhite">
     <header><%- include('../partials/header') %></header>
-    <div class="card" style="width: 300px; margin: 200px auto; background: #505355; text-align: center">
-      <div class="card-body" style="padding: 60px 20px; color: #fff">Frank Osagie, your payment of N3000 was successful</div>
+    <!--  <div class="card" style="width: 300px; margin: 200px auto; background: #505355; text-align: center">
+      <div class="card-body" style="padding: 60px 20px; color: #fff"><%= theUser.firstName%>, your payment of <%= theUser.amount%> was successful</div>
+    </div> -->
+    <div class="card" style="width: 50%; margin: 100px auto; background: #fff; text-align: center; border-color: #fff">
+      <div class="card" style="margin: 200px auto; background: #fff; margin: 10px 0; border-color: black; height: 400px">
+        <div style="display: flex; flex-direction: row">
+          <span><h6 style="font-weight: bolder; text-align: left; padding: 15px">PAYMENT RECEIPT</h6></span>
+          <span>
+            <div style="position: absolute; right: 10px; margin: 15px; width: 400px">
+              <div>
+                <span style="padding-right: 160px">No:</span>
+                <span style="padding-right: 90px"><%= theUser.reference%></span>
+                <hr style="color: blue" />
+              </div>
+              <div>
+                <span style="padding-right: 150px">Date:</span>
+                <span style="padding-right: 30px"><%= new Intl.DateTimeFormat('en-GB', { year: 'numeric', month: 'long', day: '2-digit'}).format(new Date())%></span>
+                <hr style="color: blue" />
+              </div>
+            </div>
+          </span>
+        </div>
+        <div style="margin-top: 70px; display: flex; flex-direction: row">
+          <span
+            ><p style="text-align: left; padding-left: 15px"><i>Received From:</i></p></span
+          >
+          <span
+            ><h5 style="padding-left: 150px"><span style="padding-right: 15px"><%=theUser.lastName%></span> <span style="padding-left: 50px"><%=theUser.firstName%></span></h5></span
+          >
+        </div>
+        <hr style="color: blue; margin: 0 25px 0 10px" />
+        <div style="margin-top: 70px; display: flex; flex-direction: row">
+          <span
+            ><p style="text-align: left; padding-left: 15px"><i>Amount:</i></p></span
+          >
+          <span
+            ><h5 style="padding-left: 150px"><span style="padding-left: 50px"><%=theUser.currency%></span> <span style="padding-left: 5px"><%=theUser.amount%></span></h5></span
+          >
+        </div>
+        <hr style="color: blue; margin: 0 25px 0 10px" />
+        <hr style="color: blue; margin: 0 25px 0 10px; padding: 50px" />
+      </div>
     </div>
   </body>
 </html>
