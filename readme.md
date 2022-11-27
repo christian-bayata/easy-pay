@@ -43,3 +43,15 @@ Below is a breakdown of the features this api provides:
 Users can make payment only when they provide the following requisites: `firstName`, `lastName`, `email`, and `amount`, after which, they would be redirected to paystack's payment service, where they can make payment based on the selctions made.
 
 Pictorial explanations below:
+
+- Form where users input necessay data required for payment
+
+<img width="1680" alt="Screenshot 2022-11-27 at 15 49 44" src="https://user-images.githubusercontent.com/80787295/204141987-5d6ad36a-fa35-4e87-aa14-459a85e85741.png">
+
+- Redirect to paystack payment service after clicking the `pay` button in the form.
+
+<img width="1680" alt="Screenshot 2022-11-27 at 15 50 52" src="https://user-images.githubusercontent.com/80787295/204142081-6af614df-5e6b-4314-b71d-38e22d34d84f.png">
+
+- After users select their channel of payment, their payments are successful provided there are no errors during the process.
+
+<img width="1680" alt="Screenshot 2022-11-27 at 15 51 14" src="https://user-images.githubusercontent.com/80787295/204142143-fd04ce13-22ff-4671-a08c-282781626a26.png">
