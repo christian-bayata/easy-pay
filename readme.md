@@ -393,7 +393,7 @@ This depicts the main pages that are to be rendered. It contains three (3) files
 
 ### _partials_
 
-The depicts pages that are e-usable across the entire pages, for instance: the `head`, `header` and `footer` are partials.
+This depicts pages that are re-usable across the entire page(s), for instance: the `head`, `header` and `footer` are partials.
 
 - head.ejs
 
