@@ -267,7 +267,7 @@ module.exports = User;
 
 ## _Views_
 
-The `views` folder is a default files that contains EJS pages and partials that are to be rendered in html. The views folder contains two sub-folders: `pages` and `partials`
+The `views` folder contains EJS pages and partials that are to be rendered in html. The views folder contains two sub-folders: `pages` and `partials`
 
 ### _pages_
 
