@@ -56,4 +56,7 @@ Pictorial explanations below:
 
 <img width="1680" alt="Screenshot 2022-11-27 at 15 51 14" src="https://user-images.githubusercontent.com/80787295/204142143-fd04ce13-22ff-4671-a08c-282781626a26.png">
 
-After making payment, users will have to wait for the vendor(s) to verify the payment, if the verification is successful then an e-receipt is given to the them
+After making payment, users will have to wait for the vendor(s) to verify the payment, if the verification is successful then an e-receipt is given to the them.
+
+
+<img width="1680" alt="Screenshot 2022-11-27 at 15 56 52" src="https://user-images.githubusercontent.com/80787295/204142690-c3708c9e-1cc5-4f53-8a5e-3ce64a7250ea.png">
